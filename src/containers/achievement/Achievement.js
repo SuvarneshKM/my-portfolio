@@ -1,11 +1,14 @@
-import React, {useContext} from "react";
+import React, { useContext } from "react";
 import "./Achievement.scss";
 import AchievementCard from "../../components/achievementCard/AchievementCard";
-import {achievementSection} from "../../portfolio";
-import {Fade} from "react-reveal";
+import { achievementSection } from "../../portfolio";
+import { Fade } from "react-reveal";
 import StyleContext from "../../contexts/StyleContext";
+import { SRLWrapper } from "simple-react-lightbox";
+
+
 export default function Achievement() {
-  const {isDark} = useContext(StyleContext);
+  const { isDark } = useContext(StyleContext);
   if (!achievementSection.display) {
     return null;
   }
@@ -33,22 +36,23 @@ export default function Achievement() {
               {achievementSection.subtitle}
             </p>
           </div>
-          <div className="achievement-cards-div">
-            {achievementSection.achievementsCards.map((card, i) => {
-              return (
-                <AchievementCard
-                  key={i}
-                  isDark={isDark}
-                  cardInfo={{
-                    // title: card.title,
-                    // description: card.subtitle,
-                    image: card.image,
-                    // footer: card.footerLink
-                  }}
-                />
-              );
-            })}
-          </div>
+          <SRLWrapper>
+            <div className="achievement-cards-div">
+              {achievementSection.achievementsCards.map((card, i) => {
+                return (
+                  <a href={card.image}>
+                    <AchievementCard
+                      key={i}
+                      isDark={isDark}
+                      cardInfo={{
+                        image: card.image,
+                      }}
+                    />
+                  </a>
+                );
+              })}
+            </div>
+          </SRLWrapper>
         </div>
       </div>
     </Fade>

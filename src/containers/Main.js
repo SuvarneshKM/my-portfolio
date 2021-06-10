@@ -1,4 +1,4 @@
-import React, {Component} from "react";
+import React, { Component } from "react";
 import Header from "../components/header/Header";
 import Greeting from "./greeting/Greeting";
 import Skills from "./skills/Skills";
@@ -15,8 +15,10 @@ import Podcast from "./podcast/Podcast";
 import Profile from "./profile/Profile";
 import Footer from "../components/footer/Footer";
 import Top from "./topbutton/Top";
-import {StyleProvider} from "../contexts/StyleContext";
+import { StyleProvider } from "../contexts/StyleContext";
 import "./Main.scss";
+import SimpleReactLightbox from 'simple-react-lightbox'
+
 
 export default class Main extends Component {
   constructor(props) {
@@ -31,10 +33,10 @@ export default class Main extends Component {
       const darkPref = window.matchMedia("(prefers-color-scheme: dark)");
       localStorage.setItem("isDark", darkPref.matches);
     }
-    this.setState({isDark: JSON.parse(localStorage.getItem("isDark"))});
+    this.setState({ isDark: JSON.parse(localStorage.getItem("isDark")) });
   }
   changeTheme = () => {
-    this.setState({isDark: !this.state.isDark}, () => {
+    this.setState({ isDark: !this.state.isDark }, () => {
       localStorage.setItem("isDark", this.state.isDark);
     });
   };
@@ -43,7 +45,7 @@ export default class Main extends Component {
     return (
       <div className={this.state.isDark ? "dark-mode" : null}>
         <StyleProvider
-          value={{isDark: this.state.isDark, changeTheme: this.changeTheme}}
+          value={{ isDark: this.state.isDark, changeTheme: this.changeTheme }}
         >
           <Header />
           <Greeting />
@@ -53,11 +55,11 @@ export default class Main extends Component {
           <WorkExperience />
           <Projects />
           <StartupProject />
-          <Achievement />
+          <SimpleReactLightbox>
+            <Achievement />
+          </SimpleReactLightbox>
           <Blogs />
-          <Talks />
           <Twitter />
-          <Podcast />
           <Profile />
           <Footer />
           <Top />
@@ -66,4 +68,3 @@ export default class Main extends Component {
     );
   }
 }
- 

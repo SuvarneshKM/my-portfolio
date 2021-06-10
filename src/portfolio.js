@@ -259,27 +259,35 @@ const achievementSection = {
   achievementsCards: [
     {
       image: Cert1,
+      name: 'blogathon'
     },
     {
       image: Cert2,
+      name: 'code4munnar'
     },
     {
       image: Cert3,
+      name: 'devfest'
     },
     {
       image: Cert4,
+      name: 'domectf'
     },
     {
       image: Cert5,
+      name: 'hackcamp'
     },
     {
       image: Cert6,
+      name: 'internship'
     },
     {
       image: Cert7,
+      name: 'localhackday'
     },
     {
       image: Cert8,
+      name: 'localhackdaybuild'
     },
 
   ],
