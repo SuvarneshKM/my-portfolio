@@ -6,7 +6,7 @@ import Hack_Club from "./assets/images/Hack_Club_cucek.png";
 import TinkerHub from "./assets/images/TinkerHub.png";
 import CTracker from "./assets/images/ctracker.jpg";
 import Logo_Generator from "./assets/images/logo_generator.png";
-import Vikings from "./assets/images/vikings.png";
+import portfolio from "./assets/images/portfolio.png";
 import Cert1 from './assets/images/blogathon.jpg';
 import Cert2 from './assets/images/code4munnar.jpg';
 import Cert3 from './assets/images/devfest.jpg';
@@ -26,7 +26,7 @@ const greeting = {
   username: "Suvarnesh",
   title: "Hi all, I'm Suvarnesh",
   subTitle: emoji(
-    "A passionate Full Stack Software Developer 🚀 having an experience of building Web and Mobile applications with JavaScript / Reactjs / Nodejs / React Native and some other cool libraries and frameworks."
+    "A passionate Full Stack Software Developer 🚀 having an experience of building Web and Mobile applications with JavaScript / Reactjs / Django / Flutter and some other cool libraries and frameworks and I'm a Cybersecurity enthusiast."
   ),
   resumeLink:
     "https://drive.google.com/file/d/1PJsUn4bhYwQxaNPJ0GeOSPtkHddW51VC/view?usp=sharing",
@@ -51,13 +51,9 @@ const skillsSection = {
   title: "What I do",
   subTitle: "CRAZY FULL STACK DEVELOPER WHO WANTS TO EXPLORE EVERY TECH STACK",
   skills: [
-    emoji(
-      "⚡ Develop highly interactive Front end / User Interfaces for your web and mobile applications"
-    ),
-    emoji("⚡ Progressive Web Applications ( PWA ) in normal and SPA Stacks"),
-    emoji(
-      "⚡ Integration of third party services such as Firebase/ AWS / Digital Ocean"
-    )
+    emoji("⚡ Web Development - A Freelance Web Developer"),
+    emoji("⚡ Android Development - A Freelance Android Developer"),
+    emoji("⚡ Ethical Hacking - Bug Bounty Hunting and some OSINT works ")
   ],
 
 
@@ -80,6 +76,7 @@ const educationInfo = {
 
 
 const workExperiences = {
+  describe: "PLACES I WORKED TO GAIN SOME SKILLS",
   display: true,
   experience: [
     {
@@ -88,6 +85,9 @@ const workExperiences = {
       companylogo: MUNNAR,
       date: "Jan 2021",
       desc: "Woked as the Backend developer in hellomunnar.in Pogressive Web Application Development.",
+      descBullets: [
+        "Worked with NestJS"
+      ]
     },
     {
       role: "Internet of Things Intern",
@@ -184,17 +184,17 @@ const bigProjects = {
       ]
     },
     {
-      image: Vikings,
-      projectName: "History Vikings Clone",
-      projectDesc: "History Vikings Clone Build using React Js , Redux and Firebase",
+      image: portfolio,
+      projectName: "My Portfolio Websites ",
+      projectDesc: "MY Portfolio Websites Build using React Js",
       footerLink: [
         {
           name: "GitHub Repo",
-          url: "https://github.com/SuvarneshKM/history-vikings-clone"
+          url: "https://github.com/SuvarneshKM/my-portfolio"
         },
         {
           name: "Visit Website",
-          url: "https://history-vikings-clone.web.app/"
+          url: "https://suvarneshkm.github.io/"
         }
       ]
     },
@@ -251,8 +251,7 @@ const achievementSection = {
 const contactInfo = {
   title: emoji("Contact Me ☎️"),
   subtitle:
-    "Discuss a project or just want to say hi? My Inbox is open for all.",
-  number: "+92-3243454077",
+    "DISCUSS A PROJECT OR JUST WANT TO SAY HI? MY INBOX IS OPEN FOR ALL.",
   email_address: "suvarnesh1729@gmail.com"
 };
 
