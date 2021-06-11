@@ -9,7 +9,7 @@ import {
   skillsSection,
   achievementSection,
   educationInfo,
-  bigProjects
+  bigProjects 
 } from "../../portfolio";
 
 function Header() {
