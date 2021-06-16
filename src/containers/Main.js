@@ -7,7 +7,6 @@ import WorkExperience from "./workExperience/WorkExperience";
 import Projects from "./projects/Projects";
 import StartupProject from "./StartupProjects/StartupProject";
 import Achievement from "./achievement/Achievement";
-import Twitter from "./twitter-embed/twitter";
 import Profile from "./profile/Profile";
 import Footer from "../components/footer/Footer";
 import Top from "./topbutton/Top";
@@ -53,7 +52,6 @@ export default class Main extends Component {
           <SimpleReactLightbox>
             <Achievement />
           </SimpleReactLightbox>
-          <Twitter />
           <Profile />
           <Footer />
           <Top />
