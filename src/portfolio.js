@@ -56,8 +56,6 @@ const skillsSection = {
     emoji("⚡ Ethical Hacking - Bug Bounty Hunting and some OSINT works ")
   ],
 
-
-
   display: true
 };
 
@@ -256,11 +254,6 @@ const contactInfo = {
 };
 
 
-const twitterDetails = {
-  userName: "suvarneshkm", 
-  display: true 
-};
-
 export {
   illustration,
   greeting,
@@ -271,6 +264,5 @@ export {
   openSource,
   bigProjects,
   achievementSection,
-  contactInfo,
-  twitterDetails
+  contactInfo
 };
