@@ -15,6 +15,8 @@ import Cert5 from './assets/images/hackcamp.jpg';
 import Cert6 from './assets/images/internship.jpg';
 import Cert7 from './assets/images/localhackday.jpg';
 import Cert8 from './assets/images/localhackdaybuild.jpg';
+import Cert9 from './assets/images/buildfromhome.jpg';
+
 
 
 
@@ -238,6 +240,10 @@ const achievementSection = {
     {
       image: Cert8,
       name: 'localhackdaybuild'
+    },
+    {
+      image: Cert9,
+      name: 'buildfromhome'
     },
 
   ],
