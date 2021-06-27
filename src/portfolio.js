@@ -31,7 +31,7 @@ const greeting = {
     "A passionate Full Stack Software Developer 🚀 having an experience of building Web and Mobile applications with JavaScript / Reactjs / Django / Flutter and some other cool libraries and frameworks and I'm a Cybersecurity enthusiast."
   ),
   resumeLink:
-    "https://drive.google.com/file/d/1PJsUn4bhYwQxaNPJ0GeOSPtkHddW51VC/view?usp=sharing",
+    "https://drive.google.com/file/d/11ggU9dEQAEv-d23PUpXjy0gOEwBO9yRG/view?usp=sharing",
   displayGreeting: true 
 };
 
