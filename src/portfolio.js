@@ -55,7 +55,8 @@ const skillsSection = {
   skills: [
     emoji("⚡ Web Development - A Freelance Web Developer"),
     emoji("⚡ Android Development - A Freelance Android Developer"),
-    emoji("⚡ Ethical Hacking - Bug Bounty Hunting and some OSINT works ")
+    emoji("⚡ Ethical Hacking - Bug Bounty Hunting and some OSINT works "),
+    emoji("⚡ Python Development - Interested in Automation")
   ],
 
   display: true
