@@ -9,12 +9,9 @@ export default function Footer() {
 
   useEffect(() => {
     const script = document.createElement('script');
-
     script.src = "https://webring.hackclub.com/public/embed.min.js";
     script.async = true;
-
     document.body.appendChild(script);
-
     return () => {
       document.body.removeChild(script);
     }
@@ -29,17 +26,16 @@ export default function Footer() {
         </p>
         <p className={isDark ? "dark-mode footer-text" : "footer-text"}>
           Theme is{" "}
-          <a href="https://github.com/SuvarneshKM/my-portfolio">
+          <a className="here" href="https://github.com/SuvarneshKM/my-portfolio">
             here
           </a>
         </p>
       </div>
       <center>
         <div id="webring-wrapper">
-          <a href="https://webring.hackclub.com/" id="previousBtn" class="webring-anchor" title="Previous">‹</a>
-          <a href="https://webring.hackclub.com/" class="webring-logo" title="Hack Club Webring"
-            alt="Hack Club Webring"></a>
-          <a href="https://webring.hackclub.com/" id="nextBtn" class="webring-anchor" title="Next">›</a>
+          <a href="https://webring.hackclub.com/" id="previousBtn" className="webring-anchor" title="Previous">‹</a>
+          <a href="https://webring.hackclub.com/" className="webring-logo" title="Hack Club Webring" alt="Hack Club Webring"></a>
+          <a href="https://webring.hackclub.com/" id="nextBtn" className="webring-anchor" title="Next">›</a>
         </div>
       </center>
     </Fade>
