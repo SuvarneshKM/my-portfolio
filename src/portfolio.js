@@ -15,6 +15,8 @@ import Cert5 from './assets/images/hackcamp.jpg';
 import Cert6 from './assets/images/internship.jpg';
 import Cert7 from './assets/images/localhackday.jpg';
 import Cert8 from './assets/images/localhackdaybuild.jpg';
+import Cert9 from './assets/images/buildfromhome.jpg';
+
 
 
 
@@ -29,7 +31,7 @@ const greeting = {
     "A passionate Full Stack Software Developer 🚀 having an experience of building Web and Mobile applications with JavaScript / Reactjs / Django / Flutter and some other cool libraries and frameworks and I'm a Cybersecurity enthusiast."
   ),
   resumeLink:
-    "https://drive.google.com/file/d/1PJsUn4bhYwQxaNPJ0GeOSPtkHddW51VC/view?usp=sharing",
+    "https://drive.google.com/file/d/11ggU9dEQAEv-d23PUpXjy0gOEwBO9yRG/view?usp=sharing",
   displayGreeting: true 
 };
 
@@ -53,10 +55,9 @@ const skillsSection = {
   skills: [
     emoji("⚡ Web Development - A Freelance Web Developer"),
     emoji("⚡ Android Development - A Freelance Android Developer"),
-    emoji("⚡ Ethical Hacking - Bug Bounty Hunting and some OSINT works ")
+    emoji("⚡ Ethical Hacking - Bug Bounty Hunting and some OSINT works "),
+    emoji("⚡ Python Development - Interested in Automation")
   ],
-
-
 
   display: true
 };
@@ -241,6 +242,10 @@ const achievementSection = {
       image: Cert8,
       name: 'localhackdaybuild'
     },
+    {
+      image: Cert9,
+      name: 'buildfromhome'
+    },
 
   ],
   display: true 
@@ -256,11 +261,6 @@ const contactInfo = {
 };
 
 
-const twitterDetails = {
-  userName: "suvarneshkm", 
-  display: true 
-};
-
 export {
   illustration,
   greeting,
@@ -271,6 +271,5 @@ export {
   openSource,
   bigProjects,
   achievementSection,
-  contactInfo,
-  twitterDetails
+  contactInfo
 };

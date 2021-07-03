@@ -4,17 +4,14 @@ import Greeting from "./greeting/Greeting";
 import Skills from "./skills/Skills";
 import Education from "./education/Education";
 import WorkExperience from "./workExperience/WorkExperience";
-import Projects from "./projects/Projects";
 import StartupProject from "./StartupProjects/StartupProject";
 import Achievement from "./achievement/Achievement";
-import Twitter from "./twitter-embed/twitter";
 import Profile from "./profile/Profile";
 import Footer from "../components/footer/Footer";
 import Top from "./topbutton/Top";
 import { StyleProvider } from "../contexts/StyleContext";
 import "./Main.scss";
 import SimpleReactLightbox from 'simple-react-lightbox'
-
 
 export default class Main extends Component {
   constructor(props) {
@@ -48,12 +45,10 @@ export default class Main extends Component {
           <Skills />
           <Education />
           <WorkExperience />
-          <Projects />
           <StartupProject />
           <SimpleReactLightbox>
             <Achievement />
           </SimpleReactLightbox>
-          <Twitter />
           <Profile />
           <Footer />
           <Top />
